@@ -1,181 +1,317 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
-  <title>By ErinXrz — Retro Pixel Adventure</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
   <defs>
-    <pattern id="pixels" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/>
+    <linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#080E24"/>
+      <stop offset="58%" stop-color="#111B3A"/>
+      <stop offset="100%" stop-color="#202B4B"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080D1B" stop-opacity=".96"/>
+      <stop offset="100%" stop-color="#10182C" stop-opacity=".94"/>
+    </linearGradient>
+
+    <linearGradient id="moonGlow">
+      <stop offset="0%" stop-color="#DDEBFF" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#DDEBFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="shootingStar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A9C8FF" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#C7DCFF" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <pattern id="pixelGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#A9BCE9" stroke-opacity=".035" stroke-width="1"/>
     </pattern>
-    <linearGradient id="sky" x2="0" y2="1">
-      <stop stop-color="#1689E8"/>
-      <stop offset="1" stop-color="#83DFFF"/>
-    </linearGradient>
-    <linearGradient id="pipe" x2="1" y2="0">
-      <stop stop-color="#087C3D"/>
-      <stop offset=".45" stop-color="#43E66C"/>
-      <stop offset="1" stop-color="#087D3A"/>
-    </linearGradient>
-    <linearGradient id="gold" x2="0" y2="1">
-      <stop stop-color="#FFF5A0"/>
-      <stop offset=".5" stop-color="#FFCB35"/>
-      <stop offset="1" stop-color="#E88A16"/>
-    </linearGradient>
+
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+
+    <clipPath id="sceneClip">
+      <rect width="1200" height="420" rx="18"/>
+    </clipPath>
   </defs>
 
-  <!-- SKY -->
-  <rect width="1200" height="400" fill="url(#sky)"/>
-  <rect width="1200" height="400" fill="url(#pixels)"/>
+  <g clip-path="url(#sceneClip)">
+    <!-- Night sky -->
+    <rect width="1200" height="420" fill="url(#nightSky)"/>
+    <rect width="1200" height="420" fill="url(#pixelGrid)"/>
 
-  <!-- PIXEL SUN -->
-  <g fill="#FFE879">
-    <rect x="1030" y="43" width="48" height="16"/>
-    <rect x="1014" y="59" width="80" height="16"/>
-    <rect x="1006" y="75" width="96" height="48"/>
-    <rect x="1022" y="123" width="64" height="16"/>
-    <rect x="1038" y="139" width="32" height="16"/>
+    <!-- Distant moon glow -->
+    <circle cx="1020" cy="86" r="100" fill="url(#moonGlow)"/>
+    <circle cx="1020" cy="86" r="29" fill="#C5D7F2" opacity=".90"/>
+    <circle cx="1030" cy="78" r="28" fill="#111A35"/>
+
+    <!-- Shooting star -->
+    <path d="M785 47 L908 11" stroke="url(#shootingStar)" stroke-width="4" stroke-linecap="square"/>
+    <path d="M816 42 L879 24" stroke="#A8C9FF" stroke-width="10" opacity=".12" filter="url(#softGlow)"/>
+    <rect x="904" y="8" width="7" height="7" fill="#FFFFFF"/>
+    <rect x="898" y="9" width="5" height="5" fill="#D8E7FF"/>
+    <rect x="910" y="4" width="3" height="3" fill="#D8E7FF"/>
+
+    <!-- Stars -->
+    <g fill="#DCE8FF">
+      <rect x="72" y="45" width="4" height="4"/>
+      <rect x="155" y="94" width="3" height="3"/>
+      <rect x="233" y="36" width="4" height="4"/>
+      <rect x="328" y="82" width="3" height="3"/>
+      <rect x="408" y="42" width="4" height="4"/>
+      <rect x="490" y="103" width="3" height="3"/>
+      <rect x="585" y="32" width="4" height="4"/>
+      <rect x="681" y="76" width="3" height="3"/>
+      <rect x="745" y="119" width="4" height="4"/>
+      <rect x="958" y="143" width="3" height="3"/>
+      <rect x="1102" y="47" width="4" height="4"/>
+      <rect x="1145" y="127" width="3" height="3"/>
+      <rect x="112" y="145" width="3" height="3"/>
+      <rect x="278" y="142" width="4" height="4"/>
+      <rect x="379" y="122" width="3" height="3"/>
+      <rect x="552" y="145" width="4" height="4"/>
+      <rect x="635" y="48" width="3" height="3"/>
+      <rect x="100" y="210" width="3" height="3"/>
+      <rect x="1085" y="188" width="4" height="4"/>
+    </g>
+
+    <g fill="#A8C7FA">
+      <rect x="198" y="68" width="5" height="5"/>
+      <rect x="199" y="61" width="3" height="3"/>
+      <rect x="196" y="70" width="3" height="3"/>
+      <rect x="456" y="65" width="5" height="5"/>
+      <rect x="458" y="59" width="2" height="2"/>
+      <rect x="841" y="106" width="5" height="5"/>
+      <rect x="842" y="100" width="2" height="2"/>
+      <rect x="1140" y="83" width="5" height="5"/>
+    </g>
+
+    <!-- Small pixel clouds -->
+    <g fill="#34415F" opacity=".55">
+      <rect x="40" y="112" width="42" height="8"/>
+      <rect x="54" y="104" width="22" height="8"/>
+      <rect x="87" y="112" width="18" height="8"/>
+
+      <rect x="1010" y="157" width="48" height="8"/>
+      <rect x="1025" y="149" width="25" height="8"/>
+      <rect x="1058" y="157" width="17" height="8"/>
+    </g>
+
+    <!-- Distant mountains -->
+    <path d="M0 260 L100 202 L170 246 L264 181 L350 255 L455 194 L530 254
+             L632 205 L724 256 L815 195 L904 251 L1000 205 L1087 245 L1150 212
+             L1200 242 L1200 420 L0 420 Z"
+          fill="#17233D"/>
+
+    <!-- Back hills -->
+    <path d="M0 287 Q130 228 255 285 T510 277 T770 277 T1030 264 T1200 276
+             L1200 420 L0 420 Z"
+          fill="#172F42"/>
+
+    <!-- Foreground hills -->
+    <path d="M0 334 Q115 274 260 328 T520 322 T780 318 T1035 324 T1200 300
+             L1200 420 L0 420 Z"
+          fill="#102A38"/>
+
+    <path d="M0 367 Q150 328 290 359 T575 353 T850 360 T1200 342
+             L1200 420 L0 420 Z"
+          fill="#0B202E"/>
+
+    <!-- Castle on the left -->
+    <g transform="translate(95 205)" stroke="#0A1429" stroke-width="4" stroke-linejoin="miter">
+      <rect x="18" y="44" width="115" height="90" fill="#53617E"/>
+      <rect x="5" y="30" width="37" height="104" fill="#66738E"/>
+      <rect x="109" y="22" width="37" height="112" fill="#5B6986"/>
+      <rect x="21" y="12" width="8" height="18" fill="#7B88A2"/>
+      <rect x="7" y="14" width="8" height="16" fill="#7B88A2"/>
+      <rect x="34" y="14" width="8" height="16" fill="#7B88A2"/>
+
+      <path d="M3 30 L23 4 L44 30 Z" fill="#394968"/>
+      <path d="M107 22 L128 0 L149 22 Z" fill="#394968"/>
+
+      <rect x="15" y="36" width="17" height="24" fill="#D3B77C"/>
+      <rect x="119" y="34" width="17" height="24" fill="#D3B77C"/>
+      <rect x="58" y="65" width="31" height="69" fill="#283650"/>
+      <path d="M55 65 L73 45 L92 65 Z" fill="#394968"/>
+
+      <rect x="23" y="77" width="12" height="16" fill="#B9C9E4"/>
+      <rect x="116" y="77" width="12" height="16" fill="#B9C9E4"/>
+
+      <rect x="0" y="132" width="153" height="8" fill="#34425F"/>
+      <rect x="15" y="140" width="125" height="5" fill="#1B3045"/>
+    </g>
+
+    <!-- Castle windows -->
+    <g fill="#D6B977" opacity=".9">
+      <rect x="120" y="245" width="7" height="13"/>
+      <rect x="225" y="241" width="7" height="13"/>
+      <rect x="169" y="272" width="9" height="14"/>
+    </g>
+
+    <!-- Floating golden blocks -->
+    <g stroke="#352B25" stroke-width="4">
+      <g transform="translate(330 166)">
+        <rect width="43" height="43" fill="#9A7137"/>
+        <rect x="4" y="4" width="35" height="35" fill="#D2A85B"/>
+        <rect x="10" y="10" width="23" height="23" fill="#B88C48"/>
+        <rect x="16" y="16" width="11" height="11" fill="#E7C77D"/>
+        <rect x="7" y="7" width="5" height="5" fill="#F0D69B" stroke="none"/>
+      </g>
+
+      <g transform="translate(815 185)">
+        <rect width="43" height="43" fill="#9A7137"/>
+        <rect x="4" y="4" width="35" height="35" fill="#D2A85B"/>
+        <rect x="10" y="10" width="23" height="23" fill="#B88C48"/>
+        <rect x="16" y="16" width="11" height="11" fill="#E7C77D"/>
+        <rect x="7" y="7" width="5" height="5" fill="#F0D69B" stroke="none"/>
+      </g>
+    </g>
+
+    <!-- Floating coins -->
+    <g stroke="#5E482C" stroke-width="3">
+      <g transform="translate(399 181)">
+        <rect x="6" y="0" width="14" height="5" fill="#E8C978"/>
+        <rect x="1" y="5" width="24" height="27" fill="#C39B51"/>
+        <rect x="6" y="7" width="14" height="23" fill="#E1BF6D"/>
+        <rect x="9" y="11" width="8" height="15" fill="#F0D994"/>
+      </g>
+      <g transform="translate(888 156)">
+        <rect x="6" y="0" width="14" height="5" fill="#E8C978"/>
+        <rect x="1" y="5" width="24" height="27" fill="#C39B51"/>
+        <rect x="6" y="7" width="14" height="23" fill="#E1BF6D"/>
+        <rect x="9" y="11" width="8" height="15" fill="#F0D994"/>
+      </g>
+    </g>
+
+    <!-- Main dark information panel -->
+    <rect x="270" y="113" width="660" height="194" rx="5"
+          fill="#080E20" fill-opacity=".91"
+          stroke="#65799F" stroke-opacity=".62" stroke-width="2"/>
+
+    <rect x="281" y="124" width="638" height="172" rx="3"
+          fill="none" stroke="#9AADD1" stroke-opacity=".18" stroke-width="1"/>
+
+    <!-- Panel pixel corner accents -->
+    <g fill="#D0B36C">
+      <rect x="270" y="113" width="17" height="5"/>
+      <rect x="270" y="113" width="5" height="17"/>
+      <rect x="913" y="113" width="17" height="5"/>
+      <rect x="925" y="113" width="5" height="17"/>
+      <rect x="270" y="290" width="17" height="5"/>
+      <rect x="270" y="291" width="5" height="16"/>
+      <rect x="913" y="302" width="17" height="5"/>
+      <rect x="925" y="290" width="5" height="17"/>
+    </g>
+
+    <!-- Main title -->
+    <text x="600" y="166"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="17"
+          font-weight="bold"
+          letter-spacing="5"
+          fill="#92A8D2">PLAYER PROFILE</text>
+
+    <text x="600" y="213"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="43"
+          font-weight="bold"
+          letter-spacing="1"
+          fill="#F1F4FF">By ErinXrz</text>
+
+    <!-- Career -->
+    <rect x="378" y="231" width="444" height="2" fill="#657BA5" opacity=".65"/>
+
+    <text x="600" y="254"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="16"
+          font-weight="bold"
+          letter-spacing="1.4"
+          fill="#D6E2FA">SYSTEMS ENGINEERING</text>
+
+    <!-- Level badge -->
+    <rect x="500" y="266" width="200" height="27" rx="2"
+          fill="#263954" stroke="#D1B46E" stroke-width="1.5"/>
+
+    <text x="600" y="285"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="15"
+          font-weight="bold"
+          letter-spacing="2"
+          fill="#F0D28C">LEVEL 08</text>
+
+    <!-- Original pixel adventurer -->
+    <g transform="translate(1000 258)" stroke="#11182A" stroke-width="4" stroke-linejoin="miter">
+      <!-- shadow -->
+      <ellipse cx="40" cy="113" rx="44" ry="9" fill="#070E1C" stroke="none"/>
+
+      <!-- legs -->
+      <rect x="17" y="79" width="21" height="30" fill="#284A75"/>
+      <rect x="44" y="79" width="21" height="30" fill="#284A75"/>
+      <rect x="12" y="101" width="29" height="13" fill="#18263C"/>
+      <rect x="40" y="101" width="31" height="13" fill="#18263C"/>
+
+      <!-- body -->
+      <rect x="17" y="43" width="48" height="42" fill="#416CA1"/>
+      <rect x="23" y="48" width="35" height="27" fill="#527FB3"/>
+      <rect x="26" y="58" width="10" height="12" fill="#C8A96E"/>
+      <rect x="45" y="58" width="10" height="12" fill="#C8A96E"/>
+
+      <!-- arms -->
+      <rect x="5" y="49" width="15" height="27" fill="#B86C4F"/>
+      <rect x="62" y="49" width="15" height="27" fill="#B86C4F"/>
+      <rect x="4" y="67" width="17" height="13" fill="#D2AE86"/>
+      <rect x="61" y="67" width="17" height="13" fill="#D2AE86"/>
+
+      <!-- head -->
+      <rect x="21" y="17" width="43" height="34" fill="#D6AD87"/>
+      <rect x="15" y="26" width="8" height="18" fill="#D6AD87"/>
+      <rect x="62" y="27" width="7" height="15" fill="#D6AD87"/>
+
+      <!-- hair -->
+      <rect x="17" y="19" width="11" height="19" fill="#493A37"/>
+      <rect x="22" y="14" width="40" height="8" fill="#493A37"/>
+      <rect x="56" y="19" width="9" height="12" fill="#493A37"/>
+
+      <!-- cap -->
+      <rect x="14" y="7" width="49" height="14" fill="#963E49"/>
+      <rect x="8" y="17" width="61" height="8" fill="#B4515A"/>
+      <rect x="20" y="2" width="36" height="8" fill="#B4515A"/>
+      <rect x="24" y="5" width="10" height="5" fill="#E1A0A1" stroke="none"/>
+
+      <!-- face -->
+      <rect x="31" y="30" width="5" height="6" fill="#202B3D" stroke="none"/>
+      <rect x="49" y="30" width="5" height="6" fill="#202B3D" stroke="none"/>
+      <rect x="38" y="42" width="14" height="4" fill="#8B5548" stroke="none"/>
+    </g>
+
+    <!-- Dark foreground framing -->
+    <rect x="0" y="400" width="1200" height="20" fill="#070C18" opacity=".8"/>
+    <rect x="0" y="400" width="1200" height="3" fill="#526B92" opacity=".55"/>
+
+    <!-- Footer tagline -->
+    <text x="600" y="388"
+          text-anchor="middle"
+          font-family="monospace"
+          font-size="13"
+          font-weight="bold"
+          letter-spacing="3"
+          fill="#B5C5E2">DEDICATION · INGENUITY · GROWTH</text>
+
+    <!-- Small pixel grass and ground details -->
+    <g fill="#355448" opacity=".85">
+      <rect x="42" y="358" width="10" height="6"/>
+      <rect x="52" y="352" width="7" height="6"/>
+      <rect x="240" y="378" width="13" height="5"/>
+      <rect x="260" y="372" width="7" height="6"/>
+      <rect x="875" y="370" width="13" height="5"/>
+      <rect x="895" y="364" width="7" height="6"/>
+      <rect x="1135" y="352" width="10" height="6"/>
+      <rect x="1145" y="346" width="7" height="6"/>
+    </g>
   </g>
-
-  <!-- CLOUDS -->
-  <g fill="#FFFFFF">
-    <path d="M75 91h32V75h48V59h48v16h32v16h16v32H59V107h16z"/>
-    <path d="M800 81h32V65h48V49h32v16h32v16h16v32H784V97h16z"/>
-    <path d="M490 47h24V35h36v12h24v12h12v24H478V59h12z"/>
-  </g>
-  <g fill="#C4F0FF">
-    <rect x="91" y="107" width="48" height="8"/>
-    <rect x="816" y="106" width="48" height="8"/>
-    <rect x="507" y="72" width="36" height="8"/>
-  </g>
-
-  <!-- DISTANT PIXEL MOUNTAINS -->
-  <path d="M0 260V228h48v-32h32v-32h48v32h32v32h48v32h80v-24h48v-40h32v-32h48v32h32v40h48v24h80v-32h32v-32h48v32h32v32h48v24H0z" fill="#4BBA86"/>
-  <path d="M0 268v-20h80v-24h48v24h64v20h96v-28h64v-20h48v20h48v28h112v-20h64v-24h48v24h80v20h128v-28h64v28h96v40H0z" fill="#24976C"/>
-  <g fill="#B8FFD0">
-    <path d="M112 166h16v16h16v16h-32z"/>
-    <path d="M368 194h16v16h16v16h-32z"/>
-    <path d="M704 199h16v16h16v16h-32z"/>
-    <path d="M928 210h16v16h16v16h-32z"/>
-  </g>
-
-  <!-- FARAWAY CASTLE -->
-  <g stroke="#6B398B" stroke-width="4" stroke-linejoin="miter">
-    <path d="M1000 262V210h24v-26h24v26h24v52z" fill="#EBA0D6"/>
-    <rect x="1020" y="220" width="32" height="42" fill="#F7C1E5"/>
-    <path d="M1030 262v-23h12v23" fill="#673A87"/>
-    <path d="M1017 206l19-20 19 20z" fill="#F65D81" stroke="none"/>
-  </g>
-
-  <!-- FLOATING BRICK PLATFORM -->
-  <g stroke="#7B341D" stroke-width="3">
-    <rect x="60" y="286" width="64" height="32" fill="#C65C30"/>
-    <path d="M60 302h64M92 286v16M76 302v16M108 302v16" fill="none"/>
-    <rect x="124" y="286" width="32" height="32" fill="#E58B42"/>
-    <path d="M124 302h32M140 286v16" fill="none"/>
-  </g>
-
-  <!-- MYSTERY BLOCKS -->
-  <g stroke="#A75A15" stroke-width="4">
-    <rect x="250" y="150" width="48" height="48" fill="url(#gold)"/>
-    <rect x="258" y="158" width="32" height="32" fill="none" stroke="#FFF0A0" stroke-width="3"/>
-    <path d="M267 166h12v7h-7v7h-5v-7h5v-2h-5z" fill="#A75A15" stroke="none"/>
-    <rect x="298" y="150" width="48" height="48" fill="url(#gold)"/>
-    <path d="M313 162h18v5h-5v6h-7v-6h-6zM319 178h6v6h-6z" fill="#A75A15" stroke="none"/>
-    <rect x="346" y="150" width="48" height="48" fill="#D98830"/>
-    <path d="M354 158h32v32h-32z" fill="none" stroke="#FFCB63" stroke-width="3"/>
-  </g>
-
-  <!-- PIXEL COINS -->
-  <g fill="url(#gold)" stroke="#B76B14" stroke-width="3">
-    <path d="M194 176h8v-8h16v8h8v24h-8v8h-16v-8h-8z"/>
-    <path d="M416 211h8v-8h16v8h8v24h-8v8h-16v-8h-8z"/>
-    <path d="M460 135h8v-8h16v8h8v24h-8v8h-16v-8h-8z"/>
-  </g>
-  <g fill="#FFF4B2">
-    <rect x="207" y="176" width="5" height="20"/>
-    <rect x="429" y="211" width="5" height="20"/>
-    <rect x="473" y="135" width="5" height="20"/>
-  </g>
-
-  <!-- MAIN TITLE PANEL -->
-  <path d="M468 92h630v24h18v132h-18v24H468v-24h-18V116h18z" fill="#102346" opacity=".94"/>
-  <path d="M480 104h606v12h18v120h-18v12H480v-12h-18V116h18z" fill="none" stroke="#56DDF2" stroke-width="3"/>
-  <path d="M496 128h576v2H496z" fill="#416A91"/>
-
-  <!-- TITLE -->
-  <text x="784" y="174" text-anchor="middle"
-        font-family="monospace" font-size="57" font-weight="900"
-        fill="#6C351C" stroke="#6C351C" stroke-width="7"
-        paint-order="stroke">By ErinXrz</text>
-  <text x="784" y="168" text-anchor="middle"
-        font-family="monospace" font-size="57" font-weight="900"
-        fill="#FFF1A5" stroke="#F3B72E" stroke-width="2"
-        paint-order="stroke">By ErinXrz</text>
-  <text x="784" y="202" text-anchor="middle"
-        font-family="monospace" font-size="15" font-weight="bold"
-        letter-spacing="3" fill="#B9F5FF">PRESS START TO BUILD YOUR FUTURE</text>
-
-  <!-- ORIGINAL PIXEL ADVENTURER -->
-  <g transform="translate(120 177)" stroke="#34264D" stroke-width="3" stroke-linejoin="miter">
-    <!-- shadow -->
-    <ellipse cx="51" cy="145" rx="49" ry="9" fill="#124D62" stroke="none" opacity=".5"/>
-    <!-- legs -->
-    <path d="M26 105h25v25H37v12H13v-12h13z" fill="#2356C5"/>
-    <path d="M59 105h25v25H72v12H49v-12h10z" fill="#2356C5"/>
-    <!-- boots -->
-    <path d="M13 130h25v12h13v10H9v-10z" fill="#6C382C"/>
-    <path d="M49 130h24v12h13v10H45v-10z" fill="#6C382C"/>
-    <!-- body -->
-    <path d="M25 60h51v48H25z" fill="#ED5144"/>
-    <path d="M25 76h14v25H25zM62 76h14v25H62z" fill="#FF7860"/>
-    <!-- overalls -->
-    <path d="M25 82h51v26H25z" fill="#2876E8"/>
-    <path d="M34 82v-9h12v9M58 82v-9h12v9" fill="#2876E8"/>
-    <path d="M39 89h8v8h-8zM59 89h8v8h-8z" fill="#FFE879" stroke="none"/>
-    <!-- arms -->
-    <path d="M13 63h12v32H13zM76 63h12v32H76z" fill="#ED5144"/>
-    <path d="M9 89h16v14H9zM76 89h16v14H76z" fill="#FFD09A"/>
-    <!-- face -->
-    <path d="M26 26h50v35H65v12H39V61H26z" fill="#FFD09A"/>
-    <!-- ear -->
-    <path d="M18 39h9v15h-9z" fill="#FFD09A"/>
-    <!-- hair -->
-    <path d="M26 25h50v14H65v8H53v-8H39v8H26z" fill="#63362B"/>
-    <path d="M65 43h11v12H65z" fill="#63362B"/>
-    <!-- cap -->
-    <path d="M22 17h12V5h38v12h12v13H22z" fill="#F0444B"/>
-    <path d="M34 5h38v8H34z" fill="#FF7474" stroke="none"/>
-    <path d="M45 10h13v10H45z" fill="#FFF1A5" stroke="none"/>
-    <!-- face details -->
-    <path d="M38 42h7v12h-7zM59 42h7v12h-7z" fill="#34264D" stroke="none"/>
-    <path d="M42 59h19v7H42zM34 54h9v6h-9zM61 54h9v6h-9z" fill="#63362B" stroke="none"/>
-    <path d="M47 60h11v5H47z" fill="#FFFFFF" stroke="none"/>
-  </g>
-
-  <!-- GREEN PIPE -->
-  <g stroke="#075A32" stroke-width="4">
-    <path d="M100 322h114v78H100z" fill="url(#pipe)"/>
-    <rect x="89" y="309" width="136" height="23" fill="#24D65D"/>
-    <path d="M111 339v53M127 339v53" stroke="#9AFFA9" stroke-width="4"/>
-    <path d="M89 321h136" stroke="#B3FFAE" stroke-width="3"/>
-  </g>
-
-  <!-- GRASS PLATFORM -->
-  <path d="M0 348h1200v52H0z" fill="#8A4B2C"/>
-  <path d="M0 348h1200v13H0z" fill="#4BE05B"/>
-  <path d="M0 361h1200v7H0z" fill="#239D48"/>
-  <g fill="#B76A37">
-    <path d="M0 377h30v7H0zM45 390h45v7H45zM145 373h32v7h-32zM270 387h40v7h-40zM410 374h25v7h-25zM555 389h42v7h-42zM710 376h32v7h-32zM850 389h44v7h-44zM1000 375h30v7h-30zM1120 389h42v7h-42z"/>
-  </g>
-
-  <!-- PIXEL SPARKLES -->
-  <g fill="#FFFFFF">
-    <path d="M430 68h8v16h-8zM426 72h16v8h-16z"/>
-    <path d="M1100 174h6v12h-6zM1097 177h12v6h-12z"/>
-    <path d="M70 155h6v12h-6zM67 158h12v6H67z"/>
-  </g>
-
-  <!-- FOOTER LABEL -->
-  <rect x="478" y="270" width="605" height="30" rx="2" fill="#112849" opacity=".95"/>
-  <text x="780" y="290" text-anchor="middle"
-        font-family="monospace" font-size="13" font-weight="bold"
-        letter-spacing="2" fill="#FFFFFF">JAVA  /  SQL  /  GIT  /  LEVELING UP</text>
 </svg>

@@ -1,0 +1,181 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <title>By ErinXrz — Retro Pixel Adventure</title>
+  <defs>
+    <pattern id="pixels" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/>
+    </pattern>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#1689E8"/>
+      <stop offset="1" stop-color="#83DFFF"/>
+    </linearGradient>
+    <linearGradient id="pipe" x2="1" y2="0">
+      <stop stop-color="#087C3D"/>
+      <stop offset=".45" stop-color="#43E66C"/>
+      <stop offset="1" stop-color="#087D3A"/>
+    </linearGradient>
+    <linearGradient id="gold" x2="0" y2="1">
+      <stop stop-color="#FFF5A0"/>
+      <stop offset=".5" stop-color="#FFCB35"/>
+      <stop offset="1" stop-color="#E88A16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1200" height="400" fill="url(#sky)"/>
+  <rect width="1200" height="400" fill="url(#pixels)"/>
+
+  <!-- PIXEL SUN -->
+  <g fill="#FFE879">
+    <rect x="1030" y="43" width="48" height="16"/>
+    <rect x="1014" y="59" width="80" height="16"/>
+    <rect x="1006" y="75" width="96" height="48"/>
+    <rect x="1022" y="123" width="64" height="16"/>
+    <rect x="1038" y="139" width="32" height="16"/>
+  </g>
+
+  <!-- CLOUDS -->
+  <g fill="#FFFFFF">
+    <path d="M75 91h32V75h48V59h48v16h32v16h16v32H59V107h16z"/>
+    <path d="M800 81h32V65h48V49h32v16h32v16h16v32H784V97h16z"/>
+    <path d="M490 47h24V35h36v12h24v12h12v24H478V59h12z"/>
+  </g>
+  <g fill="#C4F0FF">
+    <rect x="91" y="107" width="48" height="8"/>
+    <rect x="816" y="106" width="48" height="8"/>
+    <rect x="507" y="72" width="36" height="8"/>
+  </g>
+
+  <!-- DISTANT PIXEL MOUNTAINS -->
+  <path d="M0 260V228h48v-32h32v-32h48v32h32v32h48v32h80v-24h48v-40h32v-32h48v32h32v40h48v24h80v-32h32v-32h48v32h32v32h48v24H0z" fill="#4BBA86"/>
+  <path d="M0 268v-20h80v-24h48v24h64v20h96v-28h64v-20h48v20h48v28h112v-20h64v-24h48v24h80v20h128v-28h64v28h96v40H0z" fill="#24976C"/>
+  <g fill="#B8FFD0">
+    <path d="M112 166h16v16h16v16h-32z"/>
+    <path d="M368 194h16v16h16v16h-32z"/>
+    <path d="M704 199h16v16h16v16h-32z"/>
+    <path d="M928 210h16v16h16v16h-32z"/>
+  </g>
+
+  <!-- FARAWAY CASTLE -->
+  <g stroke="#6B398B" stroke-width="4" stroke-linejoin="miter">
+    <path d="M1000 262V210h24v-26h24v26h24v52z" fill="#EBA0D6"/>
+    <rect x="1020" y="220" width="32" height="42" fill="#F7C1E5"/>
+    <path d="M1030 262v-23h12v23" fill="#673A87"/>
+    <path d="M1017 206l19-20 19 20z" fill="#F65D81" stroke="none"/>
+  </g>
+
+  <!-- FLOATING BRICK PLATFORM -->
+  <g stroke="#7B341D" stroke-width="3">
+    <rect x="60" y="286" width="64" height="32" fill="#C65C30"/>
+    <path d="M60 302h64M92 286v16M76 302v16M108 302v16" fill="none"/>
+    <rect x="124" y="286" width="32" height="32" fill="#E58B42"/>
+    <path d="M124 302h32M140 286v16" fill="none"/>
+  </g>
+
+  <!-- MYSTERY BLOCKS -->
+  <g stroke="#A75A15" stroke-width="4">
+    <rect x="250" y="150" width="48" height="48" fill="url(#gold)"/>
+    <rect x="258" y="158" width="32" height="32" fill="none" stroke="#FFF0A0" stroke-width="3"/>
+    <path d="M267 166h12v7h-7v7h-5v-7h5v-2h-5z" fill="#A75A15" stroke="none"/>
+    <rect x="298" y="150" width="48" height="48" fill="url(#gold)"/>
+    <path d="M313 162h18v5h-5v6h-7v-6h-6zM319 178h6v6h-6z" fill="#A75A15" stroke="none"/>
+    <rect x="346" y="150" width="48" height="48" fill="#D98830"/>
+    <path d="M354 158h32v32h-32z" fill="none" stroke="#FFCB63" stroke-width="3"/>
+  </g>
+
+  <!-- PIXEL COINS -->
+  <g fill="url(#gold)" stroke="#B76B14" stroke-width="3">
+    <path d="M194 176h8v-8h16v8h8v24h-8v8h-16v-8h-8z"/>
+    <path d="M416 211h8v-8h16v8h8v24h-8v8h-16v-8h-8z"/>
+    <path d="M460 135h8v-8h16v8h8v24h-8v8h-16v-8h-8z"/>
+  </g>
+  <g fill="#FFF4B2">
+    <rect x="207" y="176" width="5" height="20"/>
+    <rect x="429" y="211" width="5" height="20"/>
+    <rect x="473" y="135" width="5" height="20"/>
+  </g>
+
+  <!-- MAIN TITLE PANEL -->
+  <path d="M468 92h630v24h18v132h-18v24H468v-24h-18V116h18z" fill="#102346" opacity=".94"/>
+  <path d="M480 104h606v12h18v120h-18v12H480v-12h-18V116h18z" fill="none" stroke="#56DDF2" stroke-width="3"/>
+  <path d="M496 128h576v2H496z" fill="#416A91"/>
+
+  <!-- TITLE -->
+  <text x="784" y="174" text-anchor="middle"
+        font-family="monospace" font-size="57" font-weight="900"
+        fill="#6C351C" stroke="#6C351C" stroke-width="7"
+        paint-order="stroke">By ErinXrz</text>
+  <text x="784" y="168" text-anchor="middle"
+        font-family="monospace" font-size="57" font-weight="900"
+        fill="#FFF1A5" stroke="#F3B72E" stroke-width="2"
+        paint-order="stroke">By ErinXrz</text>
+  <text x="784" y="202" text-anchor="middle"
+        font-family="monospace" font-size="15" font-weight="bold"
+        letter-spacing="3" fill="#B9F5FF">PRESS START TO BUILD YOUR FUTURE</text>
+
+  <!-- ORIGINAL PIXEL ADVENTURER -->
+  <g transform="translate(120 177)" stroke="#34264D" stroke-width="3" stroke-linejoin="miter">
+    <!-- shadow -->
+    <ellipse cx="51" cy="145" rx="49" ry="9" fill="#124D62" stroke="none" opacity=".5"/>
+    <!-- legs -->
+    <path d="M26 105h25v25H37v12H13v-12h13z" fill="#2356C5"/>
+    <path d="M59 105h25v25H72v12H49v-12h10z" fill="#2356C5"/>
+    <!-- boots -->
+    <path d="M13 130h25v12h13v10H9v-10z" fill="#6C382C"/>
+    <path d="M49 130h24v12h13v10H45v-10z" fill="#6C382C"/>
+    <!-- body -->
+    <path d="M25 60h51v48H25z" fill="#ED5144"/>
+    <path d="M25 76h14v25H25zM62 76h14v25H62z" fill="#FF7860"/>
+    <!-- overalls -->
+    <path d="M25 82h51v26H25z" fill="#2876E8"/>
+    <path d="M34 82v-9h12v9M58 82v-9h12v9" fill="#2876E8"/>
+    <path d="M39 89h8v8h-8zM59 89h8v8h-8z" fill="#FFE879" stroke="none"/>
+    <!-- arms -->
+    <path d="M13 63h12v32H13zM76 63h12v32H76z" fill="#ED5144"/>
+    <path d="M9 89h16v14H9zM76 89h16v14H76z" fill="#FFD09A"/>
+    <!-- face -->
+    <path d="M26 26h50v35H65v12H39V61H26z" fill="#FFD09A"/>
+    <!-- ear -->
+    <path d="M18 39h9v15h-9z" fill="#FFD09A"/>
+    <!-- hair -->
+    <path d="M26 25h50v14H65v8H53v-8H39v8H26z" fill="#63362B"/>
+    <path d="M65 43h11v12H65z" fill="#63362B"/>
+    <!-- cap -->
+    <path d="M22 17h12V5h38v12h12v13H22z" fill="#F0444B"/>
+    <path d="M34 5h38v8H34z" fill="#FF7474" stroke="none"/>
+    <path d="M45 10h13v10H45z" fill="#FFF1A5" stroke="none"/>
+    <!-- face details -->
+    <path d="M38 42h7v12h-7zM59 42h7v12h-7z" fill="#34264D" stroke="none"/>
+    <path d="M42 59h19v7H42zM34 54h9v6h-9zM61 54h9v6h-9z" fill="#63362B" stroke="none"/>
+    <path d="M47 60h11v5H47z" fill="#FFFFFF" stroke="none"/>
+  </g>
+
+  <!-- GREEN PIPE -->
+  <g stroke="#075A32" stroke-width="4">
+    <path d="M100 322h114v78H100z" fill="url(#pipe)"/>
+    <rect x="89" y="309" width="136" height="23" fill="#24D65D"/>
+    <path d="M111 339v53M127 339v53" stroke="#9AFFA9" stroke-width="4"/>
+    <path d="M89 321h136" stroke="#B3FFAE" stroke-width="3"/>
+  </g>
+
+  <!-- GRASS PLATFORM -->
+  <path d="M0 348h1200v52H0z" fill="#8A4B2C"/>
+  <path d="M0 348h1200v13H0z" fill="#4BE05B"/>
+  <path d="M0 361h1200v7H0z" fill="#239D48"/>
+  <g fill="#B76A37">
+    <path d="M0 377h30v7H0zM45 390h45v7H45zM145 373h32v7h-32zM270 387h40v7h-40zM410 374h25v7h-25zM555 389h42v7h-42zM710 376h32v7h-32zM850 389h44v7h-44zM1000 375h30v7h-30zM1120 389h42v7h-42z"/>
+  </g>
+
+  <!-- PIXEL SPARKLES -->
+  <g fill="#FFFFFF">
+    <path d="M430 68h8v16h-8zM426 72h16v8h-16z"/>
+    <path d="M1100 174h6v12h-6zM1097 177h12v6h-12z"/>
+    <path d="M70 155h6v12h-6zM67 158h12v6H67z"/>
+  </g>
+
+  <!-- FOOTER LABEL -->
+  <rect x="478" y="270" width="605" height="30" rx="2" fill="#112849" opacity=".95"/>
+  <text x="780" y="290" text-anchor="middle"
+        font-family="monospace" font-size="13" font-weight="bold"
+        letter-spacing="2" fill="#FFFFFF">JAVA  /  SQL  /  GIT  /  LEVELING UP</text>
+</svg>

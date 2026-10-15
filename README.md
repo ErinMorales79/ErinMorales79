@@ -2,7 +2,7 @@
   <img src="./banner.svg" alt="By ErinXrz — Systems Engineering — Level 08, retro pixel-art night banner" width="100%" />
 </div>
 
-<h1 align="center">Erin Morales 79 · ErinXrz</h1>
+<h1 align="center">Erin Morales 79 · ErinMR</h1>
 
 <p align="center">
   Estudiante de Ingeniería en Sistemas de la Información y Ciencias de la Computación · Guatemala
@@ -48,7 +48,21 @@ Conseguir mi primera oportunidad laboral en el ámbito de mi carrera, aportar de
 
 ## Proyectos
 
-Esta sección se actualizará cuando publique proyectos que pueda compartir. No incluyo aquí proyectos, certificaciones ni experiencia profesional que todavía no haya confirmado.
+**Depósito Emmanuel** es un sistema ERP diseñado a medida para responder a las necesidades operativas de una microempresa local. El proyecto busca centralizar y organizar la gestión empresarial mediante una aplicación desarrollada con tecnologías web y una base de datos PostgreSQL.
+
+**Tecnologías utilizadas:** Python, HTML, React, JavaScript, CSS y PostgreSQL.
+
+**Objetivo:** desarrollar una solución tecnológica adaptada a los procesos y necesidades particulares del negocio.
+
+=====================================================================================================
+
+**Sistema Gestor de Asistencia** es una aplicación orientada al registro de asistencia de trabajadores en tiempo real, con funcionalidades de geolocalización mediante el GPS del dispositivo móvil. El sistema contempla tres módulos de acceso: Trabajador, Administrador y Superadministrador, con funciones diferenciadas según el tipo de usuario.
+
+Actualmente, la aplicación utiliza archivos para gestionar y almacenar la información, en lugar de una base de datos.
+
+**Tecnologías utilizadas:** Python y JavaScript.
+
+**Objetivo:** facilitar el registro y seguimiento de la asistencia del personal, incorporando información de ubicación geográfica.
 
 ## Contacto
 
